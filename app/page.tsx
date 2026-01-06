@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 interface MarketData {
   symbol: string
@@ -62,9 +63,12 @@ export default function Home() {
             <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg font-semibold transition">
               Start Trading
             </button>
-            <button className="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold transition">
+            <Link 
+              href="/cn"
+              className="px-8 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold transition inline-block"
+            >
               View Markets
-            </button>
+            </Link>
           </div>
         </div>
 
